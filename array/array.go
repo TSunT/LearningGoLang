@@ -19,7 +19,7 @@ func main() {
 	// pringArray([4]int(myArray2)) // 编译报错： 数组的长度不匹配
 }
 
-func pringArray(myArray [4]int) {
+func pringArray(myArray [4]int) { // 这里只是值传递 改变形参的值不改变外部实参的值
 	// _表示匿名变量 只接受不能使用
 	for index, v := range myArray {
 		fmt.Println("index = ", index, "value = ", v)
